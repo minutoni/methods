@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     @IBAction func keisan(){
         hanbetsu()
-        answer = number2 + number1
+        
         //ここにint型に直して後の計算結果を持ってきてlabelに表示させる
         answerLabel.text = String(answer)
     }
@@ -38,21 +38,22 @@ class ViewController: UIViewController {
         //hanbetsuでInt型と判断された時にこのメソッドで実際にInt型に変換する
         number1 = Int(maeText.text!)!
         number2 = Int(atoText.text!)!
+        answer = number2 + number1
         return n
         return n2
     }
     
     func hanbetsu(){
         //このメソッドでtextFieldに記述したものがInt型に変換可能かを判断したい
-        if maeText.text != nil && atoText.text != nil {
-            //henkan(n: maeText , n2: atoText)
+        if Int(maeText.text!) != nil && Int(atoText.text!) != nil {
+            henkan(n: Int(maeText.text!)! , n2: Int(atoText.text!)!)
             print("trueだった")
         }else{
-            answerLabel.text = "数字を入力してください"
+
             print("falseだった")
         }
         
-        
+    }
 
         
         
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
         //            number2 = Int(atoText.text!)!
         //        }else if atoText.text is String{
         //        }
-    }
+
     
     
 //    func equal (){

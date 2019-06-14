@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="計算"/>
                                 <connections>
-                                    <action selector="keisan" destination="BYZ-38-t0r" eventType="touchUpInside" id="pUv-OY-ZBG"/>
+                                    <action selector="keisan" destination="BYZ-38-t0r" eventType="touchUpInside" id="iPr-kt-hl1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,6 +52,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="answerLabel" destination="JUx-9h-xOY" id="52G-c8-CbY"/>
                         <outlet property="atoText" destination="Oh7-9F-ec3" id="CIa-d5-m6O"/>
                         <outlet property="maeText" destination="6Uw-LW-6b7" id="eLu-Uw-WhI"/>
                     </connections>
